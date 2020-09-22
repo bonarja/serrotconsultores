@@ -1,0 +1,189 @@
+@import "../vars.scss";
+$footerHeight: 120px;
+.hero {
+  background-color: $bunker;
+  display: grid;
+  grid-template-columns: 45% auto;
+  overflow: hidden;
+  .left {
+    background-color: $bunker;
+    display: grid;
+    grid-template-rows: auto $footerHeight;
+    z-index: 3;
+    .bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-size: cover;
+      background-position: 50% 0;
+      transform: scale(1.4);
+      background-attachment: fixed;
+    }
+    .content {
+      padding: 0 80px;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      overflow: hidden;
+      background-image: linear-gradient(
+        0deg,
+        rgba(20, 23, 31, 0.71),
+        rgba(20, 23, 31, 0.87),
+        #14171f
+      );
+      .center {
+        h1 {
+          color: white;
+          font-size: 3.1em;
+          margin-bottom: 30px;
+        }
+        p {
+          line-height: 1.5em;
+          font-size: 1em;
+          color: #929292;
+        }
+        .buttons {
+          margin-top: 35px;
+          a {
+            float: left;
+            display: block;
+            width: 130px;
+            height: 35px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.65em;
+            font-weight: bold;
+            letter-spacing: 0.15em;
+            padding-top: 1px;
+            border-style: solid;
+            user-select: none;
+            border-width: 1px;
+            transition: all ease 200ms;
+            &:nth-child(1) {
+              border-color: $chambray;
+              background-color: $chambray;
+              margin-right: 20px;
+              @media screen and (max-width: 350px) {
+                & {
+                  margin-right: 10px;
+                }
+              }
+            }
+            &:nth-child(2) {
+              background-color: transparent;
+              border-color: #929292;
+            }
+            &:hover {
+              padding-left: 30px;
+            }
+          }
+        }
+      }
+    }
+    .footer {
+      background-color: white;
+    }
+  }
+  .right {
+    position: relative;
+    background-image: linear-gradient(-23deg, #1a1d4d -11%, #14171f 69%);
+    .box {
+      position: absolute;
+      height: $footerHeight;
+      width: $footerHeight;
+      bottom: $footerHeight;
+      left: 0;
+      background-color: $chambray;
+      padding: 35px;
+      z-index: 2;
+    }
+    .w1 {
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      background-size: cover;
+      width: 70%;
+      background-position-x: right;
+      background-position-y: center;
+      transition: all ease 400ms;
+      div {
+        background-image: linear-gradient(
+          56deg,
+          rgb(13, 19, 33) -1%,
+          rgba(13, 19, 33, 0.34) 53%
+        );
+      }
+    }
+    .w2 {
+      position: absolute;
+      right: 0;
+      bottom: 120px;
+      width: 40%;
+      z-index: 0;
+      height: 100%;
+      .layer {
+        background-image: linear-gradient(
+          0deg,
+          rgba(132, 168, 251, 0.46) 23%,
+          rgb(20, 23, 31) 76%
+        );
+        position: absolute;
+        z-index: 2;
+      }
+      .bg {
+        position: absolute;
+        z-index: 1;
+        background-size: cover;
+        background-position: right bottom;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1300px) {
+  // .hero {
+  //   grid-template-columns: 350px auto !important;
+  // }
+  // .left .content {
+  //   padding: 0 30px !important;
+  // }
+  .w2 {
+    opacity: 0;
+  }
+  .right .w1 {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    grid-template-columns: 100% !important;
+    .right {
+      display: none !important;
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .hero {
+    .left {
+      grid-template-rows: auto 80px !important;
+      .content {
+        padding: 0 9% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .hero {
+    .left .content {
+      padding: 0 !important;
+      padding-left: 15px !important;
+    }
+  }
+}

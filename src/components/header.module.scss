@@ -1,0 +1,33 @@
+@import "./../vars.scss";
+header {
+  width: 100%;
+  height: $headerHeight;
+  position: absolute;
+  z-index: 99;
+  background-color: $bunker;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: 100px auto;
+  .menu {
+    display: flex;
+    align-items: center;
+    .item {
+      color: white;
+      margin-left: 25px;
+      height: 100%;
+      cursor: pointer;
+      user-select: none;
+
+      span {
+        pointer-events: none;
+        transition: all ease 200ms;
+      }
+      &:active {
+        span {
+          transform: scale(0.9);
+        }
+      }
+    }
+  }
+}
