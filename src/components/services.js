@@ -6,7 +6,7 @@ import icon3 from "../icons/box.svg"
 import { AnimateScroll } from "../framebled"
 const Services = () => {
   return (
-    <div className={css.services}>
+    <div id="services2" className={css.services}>
       <div className={`${css.containt} cover`}>
         <div className={`${css.title} center y`}>
           <div className={`${css.wrap} center y`}>

@@ -2,7 +2,7 @@ import React from "react"
 import css from "./hero.module.scss"
 import herow from "../images/herow.jpg"
 import openbox from "../images/logo-positivo.png"
-import fabric from "../images/shutterstock_1644650158.jpeg"
+import fabric from "../images/h2.jpg"
 import FrameBled from "../framebled"
 import { graphql, useStaticQuery } from "gatsby"
 import Image from "../components/image"
@@ -10,7 +10,7 @@ import { Context } from "../context/context"
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query hero {
-      image3: file(relativePath: { eq: "shutterstock_162800804.jpeg" }) {
+      image3: file(relativePath: { eq: "ui.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid

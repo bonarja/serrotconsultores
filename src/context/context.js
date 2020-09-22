@@ -42,7 +42,7 @@ const Provider = ({ children }) => {
   const clickMenu = item => {
     item.id === "quienes_somos" && scroll("#home")
     item.id === "home" && scroll("#hero")
-    item.id === "servicio" && scroll("#services")
+    item.id === "servicio" && scroll("#services2")
     item.id === "contact" && scroll("#contact")
     closeMenu()
   }
