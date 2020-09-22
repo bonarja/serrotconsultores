@@ -1,7 +1,7 @@
 import React from "react"
 import css from "./hero.module.scss"
 import herow from "../images/herow.jpg"
-import openbox from "../images/logo-positivo.png"
+import openbox from "../images/logo-positive.svg"
 import fabric from "../images/h2.jpg"
 import FrameBled from "../framebled"
 import { graphql, useStaticQuery } from "gatsby"
@@ -44,8 +44,8 @@ const Hero = () => {
                 <div className={`${css.center} animated slideInRight`}>
                   <h1>For Your Business Solutions</h1>
                   <p>
-                    Somos tu agente de compras, <br /> somos tu aliado
-                    comercial.
+                    Aenean volutpat lorem eget ipsum dapibus, <br /> eu
+                    malesuada eros gravida.
                   </p>
                   <div className={`${css.buttons}`}>
                     <a onClick={() => menu({ id: "contact" })}>contacto</a>

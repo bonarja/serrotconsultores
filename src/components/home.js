@@ -34,10 +34,12 @@ const Home = () => {
             <div className="contain">
               <h2>¿Quienes somos?</h2>
               <p>
-                Somos tu aliado comercial para compras en China. Nos encargamos
-                del proceso de compra de tu empresa de una forma rapida, segura
-                y transparente. De esta forma puedes realmente enfocarte en el
-                motor de tu compañia: <b>El cliente .</b>
+                Aenean volutpat lorem eget ipsum dapibus, eu malesuada eros
+                gravida. Sed non tristique urna. Maecenas maximus vitae dui
+                vitae vulputate. In non dolor viverra arcu dignissim
+                sollicitudin. Curabitur pellentesque lorem in sollicitudin
+                suscipit. Nulla egestas vulputate auctor.:{" "}
+                <b> consectetur adipiscing.</b>
               </p>
             </div>
           </div>
